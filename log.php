@@ -1,11 +1,16 @@
 <?php
-// Conexión a la base de datos
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "log_pag";
+// Iniciar sesión
+session_start();
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Variables para la conexión a la base de datos
+$servername = $_ENV["DB_HOST"];
+$username = $_ENV["DB_USER"];
+$password = $_ENV["DB_PASSWORD"];
+$dbname = $_ENV["DB_NAME"];
+$port = $_ENV["DB_PORT"];
+
+// Conexión a la base de datos
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 if ($conn->connect_error) {
     die("La conexión falló: " . $conn->connect_error);
@@ -21,9 +26,9 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // Inicio de sesión exitoso
-    session_start();
     $_SESSION['usuario'] = $usuario;
     header("Location: inicio.php"); // Redirigir a la página de inicio
+    exit(); // Importante para detener la ejecución después de redirigir
 } else {
     // Inicio de sesión fallido
     echo "Usuario o contraseña incorrectos.";
