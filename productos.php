@@ -74,10 +74,10 @@
    
         	<div class="contenedor-productos">
         <?php
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $database = "log_pag";
+		$servername = "b5rhowkextbchzcrjhhc-mysql.services.clever-cloud.com";
+		$username = "upesbtzii1wqcgnm";
+		$password = "n5actU9NkvH5wgN3REyJ";
+		$database = "b5rhowkextbchzcrjhhc";
 
         $conn = new mysqli($servername, $username, $password, $database);
 

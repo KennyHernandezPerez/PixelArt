@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "log_pag";
+$servername = "b5rhowkextbchzcrjhhc-mysql.services.clever-cloud.com";
+$username = "upesbtzii1wqcgnm";
+$password = "n5actU9NkvH5wgN3REyJ";
+$dbname = "b5rhowkextbchzcrjhhc";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
