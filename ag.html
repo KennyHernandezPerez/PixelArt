@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Conexión a la Base de Datos</title>
+</head>
+<body>
+    <form action="procesar.php" method="post">
+        Nombre: <input type="text" name="nombre">
+        Descripcion: <input type="text" name="des">
+        Precio: <input type="text" name="pre">
+        Foto: <input type="text" name="foto">
+        <label for="eti">Etiqueta:</label>
+		<select name="eti" id="eti">
+	    <option value="Llavero">Llaveros</option>
+	  	<option value="Pulsera">Pulseras</option>
+  		<option value="Arete">Aretes</option>
+  		<option value="Collar">Collares</option>
+ 		</select>
+
+        Disponibilidad: <input type="text" name="dis">
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+</html>
+
+

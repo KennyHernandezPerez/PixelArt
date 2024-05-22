@@ -1,0 +1,264 @@
+﻿body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.fondo-login {
+    background-image: url(img/pix.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo-inicio {
+    background-image: url(img/cerezo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fondo-productos {
+	background-color:#4a2364;
+	}
+		
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.barra {
+    background-color: #4a2364; 
+    color: white; 
+    padding: 1px 0; 
+    text-align: center; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid white;
+}
+
+.cont {
+    display: flex;
+}
+.contenedor-filtros {
+    width: 20%; 
+    background:white;
+    margin-left: 15px;
+    border-radius: 9px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-productos {
+    width: 80%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+
+}
+
+.product {
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 9px;
+    text-align: center;
+    background:white;
+}
+
+.product img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+}
+
+.product h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.product p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.login,
+.registro {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.registro {
+  margin-left: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 95%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  /*position: fixed;*/
+  bottom: 0;
+  width: 98.5%;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; }
+
+.usuario {
+    font-size: 14px;
+}
+
+.productos-btn {
+    background-color: #28a745; 
+    color:#fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px; 
+    text-decoration: none;
+}
+
+.titulo-btn-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+  	padding: 20px;
+  	border-radius: 10px;
+}
+
+.titulo-btn-container h1 {
+    margin-bottom: 20%;/
+}
+
+.filt {
+	background: lime;
+}
+
+.agregar-carrito {
+    background-color: #28a745;
+    color: white; 
+    border: none; 
+    border-radius: 9px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#btn-carrito, #btn-pagar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 9px;
+}
+
+#btn-pagar {
+	margin-bottom:10px;
+}
+
+.carrito {
+    position: relative; 
+}
+
+
+.contenido-carrito {
+    position: absolute; 
+    top: 100%; 
+    right: 0; 
+    background-color: #f9f9f9;
+    min-width: 200px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1; 
+    display: none; 
+    color:black;
+    text-align: center;
+    border-radius: 9px;
+}
+
+.contenido-carrito.mostrar {
+    display: block; }
+
+
+    .carrito-container {
+        background-color: #ffffff;
+        padding: 20px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        width: 40%;
+        box-sizing: border-box;
+    }
+
+    .formulario-container {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        width: 40%;
+        box-sizing: border-box;
+    }
